@@ -32,8 +32,13 @@ public class Zoo {
     Animal cat = new Cat().speak(); //new子hook為父, 父call會call子 //A
     
     
-    // Anonymous inner class(AIC)
-    Animal bird = new Animal() { //Override掉 父類的method
+    /*
+     * Anonymous inner class(AIC)
+     * 
+     * This overriding method is just for temporarily using, so we don't need to create a class to implement it.
+     * So, Just use Anonymous inner class 
+     */
+    Animal bird = new Animal() { //Override Abstract class中的method
         Animal speak() {
             System.out.println("C");
              return this;
