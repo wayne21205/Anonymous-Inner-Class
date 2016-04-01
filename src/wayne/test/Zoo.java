@@ -27,11 +27,10 @@ class Dog extends Animal {
 public class Zoo {
   public static void main(String[] args) {
 	
-	
     Animal dog = new Dog().speak(); //new子hook為父, 父call會call子 //B
     Animal cat = new Cat().speak(); //new子hook為父, 父call會call子 //A
     
-    
+    String i = "wayne";
     /*
      * Anonymous inner class(AIC)
      * 
